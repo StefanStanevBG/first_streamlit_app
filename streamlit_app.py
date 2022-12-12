@@ -24,4 +24,4 @@ fruits_selected = streamlit.multiselect("Pick some fruits:", my_fruit_list.explo
 #fruits_selected = streamlit.multiselect("Pick some fruits:", ['Mango', 'Avocado', 'Strawberries', 'Banana'],['Avocado', 'Strawberries'])
 
 # Display the table on the page.
-#streamlit.dataframe(my_fruit_list)
+streamlit.dataframe(my_fruit_list)
