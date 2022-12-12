@@ -19,7 +19,7 @@ my_fruit_list = pandas.read_csv("https://uni-lab-files.s3.us-west-2.amazonaws.co
 
 # Let's put a pick list here so they can pick the fruit they want to include 
 #fruits_selected = streamlit.multiselect("Pick some fruits:", list(my_fruit_list.index),['Avocado', 'Strawberries'])
-fruits_selected = streamlit.multiselect("Pick some fruits:", explode(my_fruit_list.columns[0]),['Avocado', 'Strawberries'])
+fruits_selected = streamlit.multiselect("Pick some fruits:", my_fruit_list.explode(my_fruit_list.columns[0]),['Avocado', 'Strawberries'])
 #streamlit.dataframe(my_fruit_list.index[0])
 #fruits_selected = streamlit.multiselect("Pick some fruits:", ['Mango', 'Avocado', 'Strawberries', 'Banana'],['Avocado', 'Strawberries'])
 
